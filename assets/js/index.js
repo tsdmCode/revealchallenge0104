@@ -9,7 +9,7 @@ inputs.forEach((el) => {
     const tar = inputs.indexOf(e.target);
     const valid = e.target.checkValidity();
 
-    if (tar + 1 >= inputs.length && valid) {
+    if (tar === 3 && valid) {
       resetBtn.disabled = false;
       submitBtn.disabled = false;
       arrows[tar].style.display = 'inline-block';
@@ -30,11 +30,9 @@ inputs.forEach((el) => {
 resetBtn.addEventListener('click', () => {
   form.reset();
 
-  inputs.forEach((input) => {
-    input.value = '';
-  });
   for (let i = 1; i < inputs.length; i++) {
     console.log('got here!');
+    inputs[i].value = '';
     inputs[i].style.display = 'none';
   }
 
