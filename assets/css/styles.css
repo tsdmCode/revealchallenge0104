@@ -1,11 +1,13 @@
 #two,
 #three,
-#four,
+#four {
+  display: none;
+}
 #arrowOne,
 #arrowTwo,
 #arrowThree,
 #arrowFour {
-  display: none;
+  display: inline-block;
 }
 form {
   display: flex;
@@ -30,10 +32,27 @@ section {
 .arrow {
   width: 150px;
   height: 150px;
-  background-image: linear-gradient(to bottom right, transparent 50%, red 0),
-    linear-gradient(to top right, red 50%, transparent 0);
+  background-image: linear-gradient(to bottom right, transparent 50%, gray 0),
+    linear-gradient(to top right, gray 50%, transparent 0);
   background-size: 50% 100%;
   background-repeat: no-repeat;
   background-position: left, right;
   transform: rotate(90deg);
+}
+
+.green {
+  animation-name: greenify;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes greenify {
+  0% {
+    background-image: linear-gradient(to bottom right, transparent 50%, gray 0),
+      linear-gradient(to top right, gray 50%, transparent 0);
+  }
+  100% {
+    background-image: linear-gradient(to bottom right, transparent 50%, green 0),
+      linear-gradient(to top right, green 50%, transparent 0);
+  }
 }
