@@ -13,12 +13,10 @@ inputs.forEach((el) => {
       resetBtn.disabled = false;
       submitBtn.disabled = false;
       arrows[tar].classList.add('green');
-
-      // arrows[tar].style.display = 'inline-block';
-      // arrows.forEach((a) => {
-      //   a.style.backgroundImage =
-      //     'linear-gradient(to bottom right, transparent 50%, green 0), linear-gradient(to top right, green 50%, transparent 0)';
-      // });
+    } else if (tar === 3 && !valid) {
+      resetBtn.disabled = true;
+      submitBtn.disabled = true;
+      arrows[tar].classList.remove('green');
     }
     if (valid && tar + 1 <= inputs.length) {
       inputs[tar + 1].style.display = 'block';
@@ -26,6 +24,7 @@ inputs.forEach((el) => {
       console.log(arrows[tar].classList);
     } else {
       inputs[tar + 1].style.display = 'none';
+      arrows[tar].classList.remove('green');
     }
   });
 });
