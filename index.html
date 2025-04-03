@@ -8,15 +8,15 @@
     <script src="assets/js/index.js" defer></script>
   </head>
   <body>
-    <section>
+    <section id="arrows">
       <div class="arrow" id="arrowOne"></div>
       <div class="arrow" id="arrowTwo"></div>
       <div class="arrow" id="arrowThree"></div>
       <div class="arrow" id="arrowFour"></div>
     </section>
     <form>
-      <input type="text" name="" id="one" required minlength="2" />
-      <input type="number" name="" id="two" required minlength="8" />
+      <input type="text" id="one" required minlength="2" autofocus />
+      <input id="two" pattern="\d{8,8}" required />
       <input type="email" name="" id="three" pattern="^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$" required />
       <input type="password" name="" id="four" minlength="4" required />
       <button id="reset" disabled>Nulstil</button>

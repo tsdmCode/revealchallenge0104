@@ -30,6 +30,7 @@ section {
 }
 
 .arrow {
+  margin-left: 10%;
   width: 150px;
   height: 150px;
   background-image: linear-gradient(to bottom right, transparent 50%, gray 0),
