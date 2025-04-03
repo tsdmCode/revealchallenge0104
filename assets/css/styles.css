@@ -24,6 +24,9 @@ input:invalid {
 input:valid {
   border: 2px solid green;
 }
+input:focus {
+  outline: none;
+}
 section {
   height: 160px;
   margin-bottom: 10px;
@@ -55,5 +58,6 @@ section {
   100% {
     background-image: linear-gradient(to bottom right, transparent 50%, green 0),
       linear-gradient(to top right, green 50%, transparent 0);
+    transform: rotate(450deg);
   }
 }

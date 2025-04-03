@@ -1,8 +1,8 @@
+const arrows = Array.from(document.querySelectorAll('.arrow'));
+const form = document.querySelector('form');
 const inputs = Array.from(document.getElementsByTagName('input'));
 const resetBtn = document.getElementById('reset');
 const submitBtn = document.getElementById('submit');
-const arrows = Array.from(document.querySelectorAll('.arrow'));
-const form = document.querySelector('form');
 
 inputs.forEach((el) => {
   el.addEventListener('keyup', (e) => {
