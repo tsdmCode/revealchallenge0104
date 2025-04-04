@@ -49,7 +49,12 @@ section {
   animation-duration: 1s;
   animation-fill-mode: forwards;
 }
-
+#fakeinputforchinesepeople {
+  width: 0;
+  height: 0;
+  border: none;
+  nav-index: 0;
+}
 @keyframes greenify {
   0% {
     background-image: linear-gradient(to bottom right, transparent 50%, gray 0),

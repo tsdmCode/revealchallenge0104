@@ -16,11 +16,12 @@
     </section>
     <form>
       <input type="text" id="one" required minlength="2" autofocus />
-      <input id="two" pattern="\d{8,8}" required />
-      <input type="text" name="" id="three" pattern="^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$" required />
+      <input id="two" pattern="(\+45)?\d{8,8}" required />
+      <input type="" name="email" id="three" pattern="[\w-\.]+@([\w-]+\.)+[\w-]{2,4}" required />
       <input type="password" name="" id="four" minlength="4" required />
       <button id="reset" disabled>Nulstil</button>
       <button id="submit" disabled>Submit</button>
+      <input type="text" id="fakeinputforchinesepeople" />
     </form>
   </body>
 </html>
